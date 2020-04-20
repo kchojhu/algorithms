@@ -1,5 +1,9 @@
-import {bubbleSort} from "./bubbleSort";
+import {bubbleSort, bubbleSortShort} from "./bubbleSort";
 
 test('bubbleSort', () => {
-    console.log(bubbleSort([1,5,2,4,8]));
+    expect(bubbleSort([5, 1, 4, 2, 8])).toEqual([1, 2, 4, 5, 8]);
+});
+
+test('bubbleSortShort', () => {
+    expect(bubbleSortShort([5, 1, 4, 2, 8])).toEqual([1, 2, 4, 5, 8]);
 });
